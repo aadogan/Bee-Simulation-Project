@@ -46,7 +46,7 @@ Efficiency: Typically used as a percentage to evaluate the model's performance. 
 
 The AI operates asynchronously, and the prompt is as follows (you can modify it as needed):
 
-```python
+~~~python
 prompt = (
     "Simulation Statistics:\n"
     f"- Step: {stats['steps']}\n"
@@ -65,5 +65,23 @@ prompt = (
     "Forecast any possible movement trends and explain your reasoning mathematically.\n\n"
     "Response:"
 )
+~~~
+
+-------------------------------------------
+
+prompt output:
+
+![Ekran görüntüsü 2025-02-05 150356](https://github.com/user-attachments/assets/d04c213a-255b-4330-bd62-ebc7782f3392)
+
+
+
+
+pygame:
+
+https://github.com/user-attachments/assets/07eb887f-7f9a-43a6-afa6-abcd019fcba0
+
+
+
+
 
 
