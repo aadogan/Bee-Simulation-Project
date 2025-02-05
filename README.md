@@ -38,3 +38,32 @@ Total Reward: Shows the total sum of all rewards obtained by the model during th
 Energy: Shows the amount of energy the bee has in the simulation. Usually, energy decreases with each movement or specific actions. If the energy falls below a certain threshold, the simulation may end or the bee may need to take other actions. This value can be considered a metric that reflects the bee's current "condition."
 
 Efficiency: Typically used as a percentage to evaluate the model's performance. This metric is found by calculating the ratio of the average reward received per step to the ideal maximum reward. For example, if the maximum expected reward per step in an ideal situation is 10, and the model earns an average of 5 rewards, efficiency is approximately 50%. This value can be used as an indicator of how "efficiently" the model is working.
+
+
+
+-------------------------------------------
+
+
+The AI operates asynchronously, and the prompt is as follows (you can modify it as needed):
+
+```python
+prompt = (
+    "Simulation Statistics:\n"
+    f"- Step: {stats['steps']}\n"
+    f"- Total Reward: {stats['total_reward']:.2f}\n"
+    f"- Energy: {stats['energy']}\n"
+    f"- Efficiency: {stats['efficiency']:.2f}%\n"
+    f"- FPS: {stats['fps']:.2f}\n\n"
+    f"Bee position (normalized): [{bee_x:.2f}, {bee_y:.2f}]\n"
+    f"Nearest flower position (normalized): [{flower_x:.2f}, {flower_y:.2f}]\n"
+    f"Euclidean distance (normalized) between bee and flower: {distance:.2f}\n\n"
+    "Please analyze the bee's movements mathematically based on the above statistics. Your analysis should include:\n"
+    "1. Calculation of the average reward per step.\n"
+    "2. The rate of energy consumption.\n"
+    "3. Discussion on the relationship between the bee's distance from the flower and its movement dynamics.\n"
+    "4. Overall efficiency and performance evaluation.\n\n"
+    "Forecast any possible movement trends and explain your reasoning mathematically.\n\n"
+    "Response:"
+)
+
+
