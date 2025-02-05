@@ -78,8 +78,8 @@ prompt output:
 
 pygame:
 
-https://github.com/user-attachments/assets/07eb887f-7f9a-43a6-afa6-abcd019fcba0
 
+https://github.com/user-attachments/assets/00676908-e73a-4950-ad61-d3dd2dd9747c
 
 
 
